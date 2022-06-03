@@ -1,0 +1,11 @@
+// Create new project
+gcloud projects create rsgilbert-app-guide
+
+// check if an app exists in the project
+gcloud app describe 
+
+
+
+
+
+

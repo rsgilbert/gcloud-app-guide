@@ -1,0 +1,20 @@
+runtime: nodejs16
+
+handlers:
+    - url: /package
+      # Dont put ./ infront
+      static_files: package.json
+      upload: package.json
+
+    - url: /s/t
+      static_dir: public
+
+    # Matches all other urls and directs them to the app
+    - url: /.*
+      secure: always
+      redirect_http_response_code: 301
+      script: auto 
+
+    
+
+  
